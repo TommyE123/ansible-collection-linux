@@ -14,7 +14,7 @@ exclude_paths:
   - .gitignore
   - .gitmodules
 quiet: True
-verbosity: 1
+#verbosity: 1
 
 # skip_list:
 # enable_list:
