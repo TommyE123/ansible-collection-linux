@@ -13,7 +13,7 @@ exclude_paths:
   - .gilab-ci.yml
   - .gitignore
   - .gitmodules
-quiet: True
+#quiet: True
 #verbosity: 1
 
 # skip_list:
