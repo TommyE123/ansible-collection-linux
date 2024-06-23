@@ -40,7 +40,7 @@
           id: ml
           # To improve performance, you have the option to change the MegaLinter flavor that is being used.
           # Complete details on available flavors can be found at https://megalinter.io/flavors/.
-          uses: tommye123/megalinter@ansible_error_count_fix
+          uses: tommye123/megalinter@ansible_count_fix
           env:
             # All available variables are described in documentation
             # https://megalinter.io/configuration/
