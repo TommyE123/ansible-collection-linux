@@ -1,0 +1,25 @@
+# Configuration file for MegaLinter
+# See all available variables at https://megalinter.github.io/configuration/ and in linters documentation
+
+DISABLE:
+  - COPYPASTE
+  - SPELL
+
+DISABLE_LINTERS:
+  - REPOSITORY_DEVSKIM #Disabled as currently not working
+  - REPOSITORY_TRIVY_SBOM # NOISY
+  - REPOSITORY_SYFT # NOISY
+
+ENABLE_LINTERS:
+  - ANSIBLE_ANSIBLE_LINT
+
+ANSIBLE_ANSIBLE_LINT_RULES_PATH: "/config"
+FORMATTERS_DISABLE_ERRORS: false
+IGNORE_GENERATED_FILES: true
+JSON_JSONLINT_ARGUMENTS: "-B"
+LINTER_RULES_PATH: "/_Pipelines/LinterRules"
+PRINT_ALL_FILES: false
+SHOW_ELAPSED_TIME: True
+VALIDATE_ALL_CODEBASE: True
+YAML_YAMLLINT_ARGUMENTS: "--format github --strict"
+LOG_LEVEL: DEBUG
